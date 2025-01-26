@@ -1,0 +1,134 @@
+/* Main Container */
+.aboutus-container {
+  font-family: "Arial", sans-serif;
+}
+
+/* Hero Section */
+.aboutus-hero {
+  position: relative;
+  height: 70vh;
+  background-image: url("hero-image.jpg"); /* Replace with your background image */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutus-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 113, 45, 0.6); /* Green overlay with opacity */
+}
+
+.aboutus-hero-content {
+  z-index: 1;
+  text-align: center;
+  color: white;
+}
+
+.aboutus-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.aboutus-subtitle {
+  font-size: 1.5rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Info and Mission Sections */
+.aboutus-info,
+.aboutus-mission {
+  display: flex;
+  align-items: center;
+  padding: 50px 10%;
+  gap: 40px;
+}
+
+.aboutus-info-text,
+.aboutus-mission-text {
+  flex: 1;
+  font-size: 1.2rem;
+}
+
+.aboutus-info-image,
+.aboutus-mission-image {
+  flex: 1;
+  text-align: center;
+}
+
+.aboutus-info-image img,
+.aboutus-mission-image img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Animations */
+.animate-fadeIn {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slideIn {
+  animation: slideIn 1.5s ease-in-out;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-zoomIn {
+  animation: zoomIn 1.5s ease-in-out;
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .aboutus-info,
+  .aboutus-mission {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .aboutus-title {
+    font-size: 2.5rem;
+  }
+
+  .aboutus-subtitle {
+    font-size: 1.2rem;
+  }
+}

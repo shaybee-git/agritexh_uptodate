@@ -1,0 +1,110 @@
+/* Footer container */
+.footer {
+  background-color: #2f4f4f; /* Deep greenish background */
+  color: #fff;
+  padding: 40px 20px;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Logo Section */
+.footer-logo h1 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.footer-logo p {
+  font-size: 14px;
+  font-weight: lighter;
+  color: #dcdcdc;
+  max-width: 250px;
+}
+
+/* Links Section */
+.footer-links {
+  flex-basis: 30%;
+  text-align: left;
+}
+
+.footer-link-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.footer-link-list li {
+  margin-bottom: 10px;
+}
+
+.footer-link {
+  color: #dcdcdc;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: lighter;
+  transition: color 0.3s;
+}
+
+.footer-link:hover {
+  color: #7fff00; /* Light green on hover */
+}
+
+/* Social Media Section */
+.footer-social-media {
+  flex-basis: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-social-icon {
+  font-size: 24px;
+  color: #dcdcdc;
+  transition: color 0.3s;
+}
+
+.footer-social-icon:hover {
+  color: #7fff00; /* Green color on hover */
+}
+
+/* Bottom Section */
+.footer-bottom {
+  margin-top: 30px;
+  font-size: 14px;
+  font-weight: lighter;
+  color: #dcdcdc;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-logo {
+    margin-bottom: 20px;
+  }
+
+  .footer-links {
+    margin-bottom: 20px;
+  }
+
+  .footer-social-media {
+    margin-bottom: 20px;
+  }
+}

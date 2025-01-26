@@ -1,0 +1,135 @@
+/* Header Styles */
+.header {
+  background-color: #2f4f4f; /* Deep green background */
+  color: #fff;
+  padding: 5px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  font-weight: bold;
+}
+
+.nav-link {
+  font-size: 16px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  margin-right: 10px;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #7fff00; /* Light green on hover */
+  text-decoration: underline;
+}
+
+/* Dropdown Menu */
+.shop-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.dropdown-button:hover {
+  color: #7fff00; /* Green on hover */
+  text-decoration: underline;
+}
+
+/* Dropdown Menu Styles */
+.dropdown-menu {
+  position: absolute;
+  top: 100%; /* Position directly below the button */
+  left: 0;
+  min-width: 150px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
+}
+
+.shop-dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Dropdown Item Styles */
+.dropdown-item {
+  display: block;
+  padding: 10px 15px;
+  color: #000;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
+/* Profile Image */
+.profile-img {
+  border-radius: 50%;
+}
+
+/* Search Bar */
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: none;
+  margin-left: 20px;
+  width: 200px;
+  background-color: #fff;
+  color: #333;
+  transition: width 0.3s ease;
+}
+
+.search-input:focus {
+  width: 250px;
+  outline: none;
+  border: 1px solid #7fff00; /* Green border on focus */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header {
+    padding: 16px;
+  }
+
+  .header .flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-form {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .search-input {
+    width: 100%;
+  }
+}

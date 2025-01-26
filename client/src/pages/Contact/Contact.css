@@ -1,0 +1,133 @@
+/* Main container */
+.contactus-container {
+  margin-top: 50px;
+  padding: 50px 10%;
+  background-color: #f9f9f9;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+}
+
+.contactus-title {
+  font-size: 2.5rem;
+  color: #00712d; /* Dark Green */
+  margin-bottom: 10px;
+}
+
+.contactus-subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* Form Styling */
+.contactus-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #00712d; /* Dark Green */
+  outline: none;
+  box-shadow: 0px 0px 8px rgba(0, 113, 45, 0.3);
+}
+
+textarea {
+  min-height: 150px;
+  resize: none;
+}
+
+/* Submit Button */
+.contactus-submit {
+  font-family: montserrat;
+  background-color: #00712d;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.contactus-submit:hover {
+  background-color: #3e8e41;
+  color: #ff9100;
+}
+
+/* Animations */
+.animate-fadeIn {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slideUp {
+  animation: slideUp 1.5s ease-in-out;
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contactus-container {
+    padding: 30px 5%;
+  }
+
+  .contactus-title {
+    font-size: 2rem;
+  }
+
+  .contactus-subtitle {
+    font-size: 1rem;
+  }
+
+  .contactus-form {
+    padding: 20px;
+  }
+}
